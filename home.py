@@ -9,20 +9,16 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
-from langchain.tools.retriever import create_retriever_tool
+# from langchain.tools.retriever import create_retriever_tool
 from langchain.agents.load_tools import load_tools
 from langchain.memory import ConversationBufferWindowMemory
 from langchain.schema import AgentAction, AgentFinish
 from typing import List, Union
 import re
 
-# Load environment variables
-# load_dotenv()
+
 HUGGINGFACEHUB_API_TOKEN = st.secrets("HUGGINGFACEHUB_API_TOKEN")
-#
 SERPAPI_API_KEY = st.secrets("SERPAPI_API_KEY")
-
-
 
 # Streamlit setup
 st.title('AI-Powered Document Processor')
