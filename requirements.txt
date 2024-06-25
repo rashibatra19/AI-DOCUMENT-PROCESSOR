@@ -1,0 +1,11 @@
+langchain
+langchain_community
+langchain_huggingface
+huggingface_hub
+wikipedia
+arxiv
+pypdf
+faiss-cpu
+langchainhub
+streamlit
+google-search-results
