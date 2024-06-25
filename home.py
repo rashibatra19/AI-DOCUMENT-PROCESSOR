@@ -17,8 +17,8 @@ from typing import List, Union
 import re
 
 
-HUGGINGFACEHUB_API_TOKEN = st.secrets("HUGGINGFACEHUB_API_TOKEN")
-SERPAPI_API_KEY = st.secrets("SERPAPI_API_KEY")
+HUGGINGFACEHUB_API_TOKEN = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
+SERPAPI_API_KEY = st.secrets["SERPAPI_API_KEY"]
 
 # Streamlit setup
 st.title('AI-Powered Document Processor')
